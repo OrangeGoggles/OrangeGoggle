@@ -3,8 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Infra", "1 - Infra", "{9D3CE45C-53D4-418C-9B9E-3027E3E7F542}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - IdentityServer", "1.1 - IdentityServer", "{0CFC1451-43AB-4578-885D-6CA4BC52E2B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrangeGoggle.Infra.IdentityServer", "OrangeGoggle.Infra.IdentityServer\OrangeGoggle.Infra.IdentityServer.csproj", "{72AF84C3-080E-48AB-8AA4-3B9CB91B421C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FB359D38-F254-4DB9-AC13-274A01CE34E7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72AF84C3-080E-48AB-8AA4-3B9CB91B421C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AF84C3-080E-48AB-8AA4-3B9CB91B421C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AF84C3-080E-48AB-8AA4-3B9CB91B421C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AF84C3-080E-48AB-8AA4-3B9CB91B421C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB359D38-F254-4DB9-AC13-274A01CE34E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB359D38-F254-4DB9-AC13-274A01CE34E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB359D38-F254-4DB9-AC13-274A01CE34E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB359D38-F254-4DB9-AC13-274A01CE34E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CFC1451-43AB-4578-885D-6CA4BC52E2B2} = {9D3CE45C-53D4-418C-9B9E-3027E3E7F542}
+		{72AF84C3-080E-48AB-8AA4-3B9CB91B421C} = {0CFC1451-43AB-4578-885D-6CA4BC52E2B2}
+		{FB359D38-F254-4DB9-AC13-274A01CE34E7} = {0CFC1451-43AB-4578-885D-6CA4BC52E2B2}
 	EndGlobalSection
 EndGlobal
